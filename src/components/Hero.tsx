@@ -1,6 +1,6 @@
-import { Flex, Heading, Box, Image, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 
-export const Hero = ({ title }: { title: string }) => (
+export const Hero = () => (
   <Flex
     w="100%"
     h={'65vh'}

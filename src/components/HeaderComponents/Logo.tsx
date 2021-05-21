@@ -4,11 +4,7 @@ import { useBreakpointValue } from '@chakra-ui/media-query';
 // import Image from 'next/image';
 import { Image, Flex, Text } from '@chakra-ui/react';
 
-type Props = {
-  isLoggedIn: boolean;
-};
-
-export const Logo = ({ isLoggedIn }: Props) => {
+export const Logo = () => {
   // let loggedIn = isLoggedIn ? '/dashboard' : '/';
   return (
     <Link

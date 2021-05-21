@@ -1,5 +1,4 @@
 import { Button } from '@chakra-ui/button';
-import { useRouter } from 'next/dist/client/router';
 import React from 'react';
 // import { useMeQuery, useLogoutMutation } from '../../generated/graphql';
 // import { useApolloClient } from '@apollo/client';

@@ -1,8 +1,7 @@
-import { Text, Container, Box, Badge, Icon, Stack } from '@chakra-ui/react';
+import { Container, Box, Badge, Icon } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { MdAndroid } from 'react-icons/md';
 import { AiOutlineApple } from 'react-icons/ai';
-import Image from 'next/image';
 
 const Products = () => (
   <>
