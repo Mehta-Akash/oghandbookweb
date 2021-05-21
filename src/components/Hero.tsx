@@ -1,17 +1,27 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box, Image, Text } from '@chakra-ui/react';
 
 export const Hero = ({ title }: { title: string }) => (
   <Flex
+    w="100%"
+    h={'65vh'}
+    maxH={'30rem'}
+    backgroundImage={'/impacted-subcapital-fracture.jpg'}
+    backgroundSize={'cover'}
+    backgroundPosition={'bottom'}
     justifyContent="center"
     alignItems="center"
-    height="100vh"
-    bgGradient="linear(to-l, #7928CA, #FF0080)"
-    bgClip="text"
   >
-    <Heading fontSize="6vw">{title}</Heading>
+    <Text
+      fontSize={{ base: '30', md: '5vw' }}
+      fontWeight="bold"
+      color="white"
+      zIndex="0"
+    >
+      {'Orthogeriatrics Handbook'}
+    </Text>
   </Flex>
-)
+);
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui-typescript',
-}
+  title: 'Orthogeriatrics Handbook laskdfla alskdjf ',
+};

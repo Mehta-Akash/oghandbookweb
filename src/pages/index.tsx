@@ -1,56 +1,35 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+import { Text, Container, Link } from '@chakra-ui/react';
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import { Hero } from '../components/Hero';
+import { Header } from '../components/Header';
 
 const Index = () => (
-  <Container height="100vh">
+  // <Container height="100vh">
+  <>
+    <Header />
     <Hero />
-    <Main>
+    <Container pt="10">
       <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>typescript</Code>.
+        The OG handbook is a comprehensive and easy to use app that allows you
+        to access information about treating patients with hip fractures. It
+        summarises the key standards set out by the British Orthopaedic
+        Association (BOA) and the British Geriatric Society (BGS) in the
+        publication 'The Care of Patients with Fragility Fracture 2007' and in
+        'The Care of the older or Frail orthopaedic trauma patient 2019'. These
+        standards are monitored for patients admitted to hospital with hip
+        fracture as part of the National Hip Fracture Database (NHFD). New and
+        updated guidelines are frequently issued by the NHFD. The OG handbook
+        summarises the important aspects of orthogeriatric patient care form
+        presentation in the emergency department, pre-operative optimisation,
+        inpatient care and final discharge.
       </Text>
+      <Text pt="20">
+        Image and case courtesy of Assoc Prof Frank Gaillard,{' '}
+        <Link href="https://radiopaedia.org/">Radiopaedia.org</Link>. From the
+        case <Link href="https://radiopaedia.org/cases/2717">rID: 2717</Link>
+      </Text>
+    </Container>
+  </>
+);
 
-      <List spacing={3} my={0}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
-  </Container>
-)
-
-export default Index
+export default Index;
