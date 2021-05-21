@@ -24,7 +24,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
   onToggle,
   loggedIn,
 }) => {
-  const { isOpen: isOpenM, onOpen, onClose: onCloseM } = useDisclosure();
+  const { onOpen } = useDisclosure();
 
   return (
     <>
@@ -41,7 +41,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
           align={'center'}
         >
           <Flex flex={{ base: 1 }} justify={{ base: 'start', md: 'start' }}>
-            <Logo isLoggedIn={loggedIn} />
+            <Logo />
             <Flex
               display={{ base: 'none', md: 'flex' }}
               alignItems="center"
@@ -61,13 +61,8 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
             <DarkModeSwitch />
           </Stack>
 
-          {/* <LoginModal isOpenM={isOpenM} onCloseM={onCloseM} /> */}
           <Hamburger isOpen={isOpen} onToggle={onToggle} />
         </Flex>
-
-        {/* <Collapse in={isOpen} animateOpacity={true}>
-          <MobileNav />
-        </Collapse> */}
       </Box>
     </>
   );
