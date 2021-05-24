@@ -2,6 +2,7 @@ import { Text, Container, Link } from '@chakra-ui/react';
 
 import { Hero } from '../components/Hero';
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 
 const Index = () => (
   // <Container height="100vh">
@@ -29,6 +30,7 @@ const Index = () => (
         case <Link href="https://radiopaedia.org/cases/2717">rID: 2717</Link>
       </Text>
     </Container>
+    <Footer />
   </>
 );
 

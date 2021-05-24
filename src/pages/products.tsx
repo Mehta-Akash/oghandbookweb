@@ -2,6 +2,7 @@ import { Container, Box, Badge, Icon } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { MdAndroid } from 'react-icons/md';
 import { AiOutlineApple } from 'react-icons/ai';
+import { Footer } from '../components/Footer';
 
 const Products = () => (
   <>
@@ -51,7 +52,8 @@ const Products = () => (
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
-        as="button"
+        as="a"
+        href="https://testflight.apple.com/join/LhDpl36E"
         mt={{ base: '10', md: '20vh' }}
         mr={'1rem'}
         _hover={{ border: '2px', color: '#ff6700' }}
@@ -59,7 +61,7 @@ const Products = () => (
       >
         <Box d="flex" alignItems="baseline">
           <Badge borderRadius="full" px="2" colorScheme="teal">
-            Coming soon
+            Beta version
           </Badge>
         </Box>
         <Icon as={AiOutlineApple} w={200} h={200} />
@@ -75,10 +77,11 @@ const Products = () => (
             {/* {property.title} */}
           </Box>
 
-          <Box color="gray.500">{'Get IOS app'}</Box>
+          <Box color="gray.500">{'Get IOS app TestFlight'}</Box>
         </Box>
       </Box>
     </Container>
+    <Footer />
   </>
 );
 

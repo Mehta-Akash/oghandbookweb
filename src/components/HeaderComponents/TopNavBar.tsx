@@ -7,7 +7,6 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { DarkModeSwitch } from './DarkModeSwitch';
-import { DesktopNav } from './DesktopNav';
 import { DesktopNavRight } from './DesktopNavRight';
 import { Hamburger } from './Hamburger';
 // import { LoginModal } from './LoginModal';
@@ -22,7 +21,7 @@ type TopNavBarProps = {
 export const TopNavBar: React.FC<TopNavBarProps> = ({
   isOpen,
   onToggle,
-  loggedIn,
+  // loggedIn,
 }) => {
   const { onOpen } = useDisclosure();
 
@@ -32,7 +31,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
         <Flex
           bg={useColorModeValue('white', 'gray.900')}
           color={useColorModeValue('gray.600', 'white')}
-          minH={'80px'}
+          minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
@@ -42,13 +41,6 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
         >
           <Flex flex={{ base: 1 }} justify={{ base: 'start', md: 'start' }}>
             <Logo />
-            <Flex
-              display={{ base: 'none', md: 'flex' }}
-              alignItems="center"
-              ml={10}
-            >
-              {loggedIn ? null : <DesktopNav />}
-            </Flex>
           </Flex>
 
           <Stack

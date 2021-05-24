@@ -1,4 +1,5 @@
 import { Text, Heading, Container, Link } from '@chakra-ui/react';
+import { Footer } from '../components/Footer';
 
 // import { Container } from '../components/Container';
 // import { DarkModeSwitch } from '../components/DarkModeSwitch';
@@ -67,6 +68,7 @@ const PrivacyPolicy = () => (
         </Link>
       </Text>
     </Container>
+    <Footer />
   </>
 );
 
